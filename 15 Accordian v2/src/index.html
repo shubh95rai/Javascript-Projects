@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <title>Accordian</title>
+  </head>
+  <body
+    class="flex h-screen pt-20 justify-center bg-neutral-200 font-inter select-none">
+    <main>
+      <section class="flex flex-col items-center gap-10">
+        <h1 class="text-4xl font-bold text-yellow-600">General Questions</h1>
+
+        <div class="flex flex-col gap-10">
+          <article
+            class="accordian flex flex-col bg-white p-5 shadow-lg w-[600px] cursor-pointer">
+            <div class="flex items-center justify-between gap-5">
+              <h1 class="text-xl tracking-widest font-medium">
+                Do I have to allow the use of cookies?
+              </h1>
+              <i class="btn ri-add-box-line text-3xl text-yellow-600"></i>
+            </div>
+
+            <div class="answer max-h-0 overflow-hidden">
+              <p class="text-neutral-500 pt-5">
+                Unicorn vinyl poutine brooklyn, next level direct trade iceland.
+                Shaman copper mug church-key coloring book, whatever poutine
+                normcore fixie cred kickstarter post-ironic street art. Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Consectetur,
+                aliquid.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="accordian flex flex-col bg-white p-5 shadow-lg w-[600px] cursor-pointer">
+            <div class="flex items-center justify-between gap-5">
+              <h1 class="text-xl tracking-widest font-medium">
+                How do I change my My Page password?
+              </h1>
+              <i class="btn ri-add-box-line text-3xl text-yellow-600"></i>
+            </div>
+
+            <div class="answer max-h-0 overflow-hidden">
+              <p class="text-neutral-500 pt-5">
+                Coloring book forage photo booth gentrify lumbersexual. Migas
+                chillwave poutine synth shoreditch, enamel pin thundercats
+                fashion axe roof party polaroid chartreuse. Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Tenetur aliquam, vero
+                sit pariatur laboriosam id. Quos, vitae ex quia nulla totam cum,
+                velit, quae minima ipsa nobis a iure cupiditate.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="accordian flex flex-col bg-white p-5 shadow-lg w-[600px] cursor-pointer">
+            <div class="flex items-center justify-between gap-5">
+              <h1 class="text-xl tracking-widest font-medium">
+                What is BankID?
+              </h1>
+              <i class="btn ri-add-box-line text-3xl text-yellow-600"></i>
+            </div>
+            <div class="answer max-h-0 overflow-hidden">
+              <p class="text-neutral-500 pt-5">
+                Enamel pin fam sustainable woke whatever venmo. Authentic
+                asymmetrical put a bird on it, lumbersexual activated charcoal
+                kinfolk banjo cred pickled sartorial. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Placeat distinctio, omnis id
+                cupiditate earum reprehenderit adipisci ab, tempore, ex quaerat
+                voluptatibus accusantium? Temporibus consectetur aperiam totam
+                deleniti eligendi alias? Temporibus fugit hic sit
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const accordians = document.querySelectorAll(".accordian");
+
+      accordians.forEach((accordian) => {
+        const btn = accordian.querySelector(".btn");
+        const answer = accordian.querySelector(".answer");
+
+        accordian.addEventListener("click", () => {
+          if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            accordian.classList.remove("active");
+            btn.classList.remove("ri-checkbox-indeterminate-line");
+          } else {
+            let alreadyActiveItem = document.querySelectorAll(".active");
+
+            alreadyActiveItem.forEach((currentActiveItem) => {
+              const activeAnwser = currentActiveItem.querySelector(".answer");
+              activeAnwser.style.maxHeight = null;
+              currentActiveItem.classList.remove("active");
+            });
+
+            let minusIcon = document.querySelectorAll(
+              ".ri-checkbox-indeterminate-line",
+            );
+            minusIcon.forEach((icon) => {
+              icon.classList.remove("ri-checkbox-indeterminate-line");
+            });
+
+            let maxHeight = answer.scrollHeight;
+
+            accordian.classList.add("active");
+            answer.style.maxHeight = `${maxHeight}px`;
+            btn.classList.add("ri-checkbox-indeterminate-line");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

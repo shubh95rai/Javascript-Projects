@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <title>Modal</title>
+  </head>
+  <body
+    class="font-inter h-screen bg-[url('./wallpaper.jpg')] bg-cover bg-bottom bg-no-repeat flex justify-center items-center text-neutral-800">
+    <main
+      class="bg-neutral-200 p-16 rounded shadow-xl inline-flex flex-col gap-8 items-center">
+      <h1 class="font-bold text-6xl">Modal Project</h1>
+
+      <button
+        class="open uppercase tracking-widest border-2 border-neutral-800 font-medium hover:bg-neutral-800 hover:text-neutral-200 py-1 px-4 rounded active:scale-95 transition-all">
+        open modal
+      </button>
+    </main>
+
+    <div
+      class="modal hidden fixed w-screen h-screen bg-[rgba(0,0,0,.5)] justify-center items-center transition-all">
+      <div
+        class="relative bg-neutral-200 p-40 rounded flex flex-col items-center">
+        <h1 class="font-bold text-6xl text-neutral-800">Modal Content</h1>
+        <button
+          class="close absolute right-4 top-2 text-red-700 hover:text-red-600 transition-all text-3xl">
+          <i class="ri-close-circle-fill"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const open = document.querySelector(".open");
+      const close = document.querySelector(".close");
+      const modal = document.querySelector(".modal");
+
+      open.addEventListener("click", () => {
+        modal.classList.replace("hidden", "flex");
+      });
+
+      close.addEventListener("click", () => {
+        modal.classList.replace("flex", "hidden");
+      });
+    </script>
+  </body>
+</html>

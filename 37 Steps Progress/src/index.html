@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Steps Progress</title>
+  </head>
+  <body
+    class="min-h-screen select-none bg-neutral-900 font-inter text-neutral-300">
+    <main
+      class="flex min-h-screen flex-col items-center justify-center gap-20 font-medium">
+      <h1 class="text-4xl">Steps Progress</h1>
+      <div class="iconsContainer relative flex w-96 justify-between">
+        <div class="progress"></div>
+        <div class="progressBackground"></div>
+        <div class="icon">
+          <i class="ri-facebook-circle-fill"></i>
+          <p>Facebook</p>
+        </div>
+        <div class="icon">
+          <i class="ri-instagram-fill"></i>
+          <p>Instagram</p>
+        </div>
+        <div class="icon">
+          <i class="ri-twitter-fill"></i>
+          <p>Twitter</p>
+        </div>
+        <div class="icon">
+          <i class="ri-google-fill"></i>
+          <p>Google</p>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <button class="prev btn" disabled>Prev</button>
+        <button class="next btn">Next</button>
+      </div>
+    </main>
+  </body>
+</html>

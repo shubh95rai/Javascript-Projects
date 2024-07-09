@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <title>Sidebar</title>
+  </head>
+  <body class="font-inter bg-neutral-300 text-neutral-700">
+    <header>
+      <nav class="bg-white px-5 h-16 flex justify-between items-center">
+        <i
+          class="toggle ri-menu-line font-bold text-3xl cursor-pointer hover:text-sky-500"></i>
+
+        <div class="font-bold text-3xl cursor-pointer">
+          Coding
+          <span class="text-sky-500">Addict</span>
+        </div>
+
+        <i
+          class="ri-search-line font-bold text-3xl cursor-pointer hover:text-sky-500"></i>
+
+        <div
+          class="sidebar absolute bg-white left-[-100%] top-0 py-4 h-screen w-72 flex flex-col gap-10 transition-all">
+          <div class="px-5">
+            <i
+              class="back ri-arrow-left-line font-bold text-3xl cursor-pointer hover:text-sky-500"></i>
+          </div>
+
+          <ul class="flex flex-col text-xl">
+            <li class="hover:text-white p-5 hover:bg-sky-500 transition-all">
+              <a href="">Home</a>
+            </li>
+            <li class="hover:text-white p-5 hover:bg-sky-500 transition-all">
+              <a href="">Products</a>
+            </li>
+            <li class="hover:text-white p-5 hover:bg-sky-500 transition-all">
+              <a href="">Contact</a>
+            </li>
+            <li class="hover:text-white p-5 hover:bg-sky-500 transition-all">
+              <a href="">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle");
+      const sidebar = document.querySelector(".sidebar");
+      const nav = document.querySelector(".nav");
+      const back = document.querySelector(".back");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.replace("left-[-100%]", "left-0");
+      });
+
+      back.addEventListener("click", () => {
+        sidebar.classList.replace("left-0", "left-[-100%]");
+      });
+    </script>
+  </body>
+</html>

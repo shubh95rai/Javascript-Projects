@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Lorem Ipsum</title>
+  </head>
+  <body class="bg-neutral-200 font-googleSans text-neutral-800">
+    <section class="py-20 flex flex-col items-center gap-5">
+      <h1 class="text-4xl font-medium">Tired of boring lorem ipsum?</h1>
+      <form class="form flex items-center gap-2">
+        <label class="text-xl" for="number">Paragraphs :</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          class="w-12 rounded p-1 text-center text-lg"
+          autofocus
+        />
+        <button
+          type="submit"
+          class="rounded bg-slate-500 px-4 py-2 text-sm uppercase text-white hover:bg-slate-600"
+        >
+          Generate
+        </button>
+      </form>
+      <article
+        class="article mt-5 flex w-[800px] flex-col gap-5 text-center text-neutral-600"
+      ></article>
+    </section>
+  </body>
+</html>

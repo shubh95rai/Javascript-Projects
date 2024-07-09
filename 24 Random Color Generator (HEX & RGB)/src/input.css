@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply rounded border-2 border-neutral-300 bg-black px-5 py-2.5 text-xl font-medium transition-all active:scale-95;
+  }
+}
+
+@layer components {
+  .clicked {
+    @apply border-2 border-black bg-neutral-300 text-black;
+  }
+}

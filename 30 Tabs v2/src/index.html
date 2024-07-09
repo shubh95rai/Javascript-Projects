@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Tabs</title>
+  </head>
+  <body
+    class="flex min-h-screen select-none items-center justify-center bg-gradient-to-b from-neutral-800 to-neutral-950 font-inter">
+    <main class="flex flex-col gap-10">
+      <section class="flex gap-5 font-semibold text-black">
+        <button
+          class="activeBtn btn rounded bg-neutral-300 px-4 py-2 transition-all"
+          data-id="home">
+          Home
+        </button>
+        <button
+          class="btn rounded bg-neutral-300 px-4 py-2 transition-all"
+          data-id="about">
+          About
+        </button>
+        <button
+          class="btn rounded bg-neutral-300 px-4 py-2 transition-all"
+          data-id="projects">
+          Projects
+        </button>
+      </section>
+
+      <section class="text-center text-3xl font-semibold text-neutral-300">
+        <p class="activeContent hidden" id="home">Home Section</p>
+        <p class="hidden" id="about">About Section</p>
+        <p class="hidden" id="projects">Projects Section</p>
+      </section>
+    </main>
+  </body>
+</html>

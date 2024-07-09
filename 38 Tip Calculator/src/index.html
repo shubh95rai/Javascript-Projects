@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Steps Progress</title>
+  </head>
+  <body
+    class="flex min-h-screen select-none flex-col items-center justify-center gap-10 bg-neutral-900 font-inter text-neutral-300">
+    <h1 class="text-3xl font-medium">Tip Calculator</h1>
+    <main class="flex w-[700px] rounded border border-neutral-500">
+      <section
+        class="it flex grow basis-0 flex-col gap-5 border-e border-neutral-500 p-5">
+        <div class="flex flex-col gap-1">
+          <label for="bill">Bill</label>
+          <input type="number" class="input" name="" id="bill" value="0" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="tip">Tip %</label>
+          <input type="number" value="10" class="input" name="" id="tip" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="people">Number of people</label>
+          <input type="number" class="input" name="" id="people" value="1" />
+        </div>
+      </section>
+      <section
+        class="flex grow basis-0 flex-col justify-center gap-5 p-5 text-2xl">
+        <div class="flex justify-between">
+          <p>Total Bill</p>
+          <p class="totalBill">0.00</p>
+        </div>
+        <div class="flex justify-between">
+          <p>Tip</p>
+          <p class="totalTip">0.00</p>
+        </div>
+        <div class="flex justify-between gap-12">
+          <p>Amount per person</p>
+          <p class="amountPerPerson">0.00</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

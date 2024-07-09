@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator Version 2</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet" />
+  </head>
+
+  <body
+    class="bg-neutral-900 text-neutral-200 font-jetBrains flex justify-center items-center h-screen select-none">
+    <div class="w-[400px]">
+      <div class="bg-zinc-800 p-5 flex justify-between items-center mb-5">
+        <p class="text-3xl" id="display">Password</p>
+        <i class="text-2xl text-emerald-300 ri-file-copy-line" id="copy"></i>
+      </div>
+
+      <div class="bg-zinc-800 p-5 accent-emerald-300 flex flex-col gap-3">
+        <div class="flex justify-between items-center">
+          <p>Character length</p>
+          <p class="text-2xl text-emerald-300" id="length">10</p>
+        </div>
+        <div>
+          <input type="range" min="8" max="16" class="w-full my-5" id="range" />
+        </div>
+        <div>
+          <input checked type="checkbox" id="uppercase" class="w-4 h-4" />
+          <label for="uppercase" class="align-text-bottom">Include Uppercase Letters</label>
+        </div>
+        <div>
+          <input checked type="checkbox" id="lowercase" class="w-4 h-4" />
+          <label for="lowercase" class="align-text-bottom">Include Lowercase Letters</label>
+        </div>
+        <div>
+          <input checked class="w-4 h-4" type="checkbox" id="number" />
+          <label for="number" class="align-text-bottom">Include Numbers</label>
+        </div>
+        <div>
+          <input  checked class="w-4 h-4" type="checkbox" id="symbol" />
+          <label for="symbol" class="align-text-bottom">Include Symbols</label>
+        </div>
+        <div class="mt-4">
+          <button
+            class="bg-emerald-300 text-black uppercase w-full p-5 font-semibold"
+            id="btn">
+            Generate Password&nbsp;
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

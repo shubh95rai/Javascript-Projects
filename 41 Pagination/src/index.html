@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Pagination</title>
+  </head>
+  <body
+    class="min-h-screen select-none bg-neutral-900 font-inter text-neutral-300">
+    <main
+      class="flex flex-col items-center justify-center gap-5 p-10 font-medium">
+      <h1 class="text-3xl">Pagination</h1>
+      <section
+        class="pagination-list grid grid-cols-4 w-full  gap-2 max-w-[800px]"></section>
+      <section class="flex gap-2">
+        <button class="button prev" disabled>Prev</button>
+        <div class="pagination-numbers flex gap-2"></div>
+        <button class="button next" >Next</button>
+      </section>
+    </main>
+  </body>
+</html>

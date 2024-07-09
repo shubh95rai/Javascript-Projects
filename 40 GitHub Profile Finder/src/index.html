@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>GitHub Profile Finder</title>
+  </head>
+  <body
+    class="min-h-screen select-none bg-neutral-900 font-inter text-neutral-300">
+    <main class="flex min-h-screen flex-col items-center gap-5 pt-10">
+      <h1 class="text-3xl font-medium">GitHub Profile Finder</h1>
+
+      <input
+        type="text"
+        class="search rounded border border-neutral-500 bg-transparent px-4 py-2 outline-none placeholder:text-neutral-500 focus:border-neutral-300"
+        placeholder="Enter username" />
+      <div class="flex min-h-80 items-center justify-center">
+        <span class="loading loading-spinner loading-lg hidden"></span>
+        <div class="profile"></div>
+      </div>
+    </main>
+  </body>
+</html>

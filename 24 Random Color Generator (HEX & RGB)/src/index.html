@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Random Color Generator</title>
+  </head>
+  <body
+    class="bgColor flex min-h-screen justify-center pt-10 font-jetBrains text-neutral-300"
+  >
+    <section class="flex gap-10">
+      <div class="flex items-start gap-2">
+        <button class="hex uppercase">hex</button>
+        <button class="rgb uppercase">rgb</button>
+      </div>
+      <div class="flex items-start gap-2">
+        <button class="button">Generate</button>
+        <button class="copy">Copy</button>
+      </div>
+    </section>
+    <p
+      class="text fixed top-1/2 hidden -translate-y-1/2 rounded border bg-black px-5 py-2.5 text-4xl font-medium"
+    ></p>
+  </body>
+</html>

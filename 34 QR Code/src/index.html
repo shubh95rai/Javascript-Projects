@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>QR Code</title>
+  </head>
+  <body
+    class="min-h-screen select-none bg-neutral-900 font-inter text-neutral-300"
+    spellcheck="false">
+    <main class="flex flex-col items-center justify-center gap-10 pt-20">
+      <h1 class="text-3xl font-medium">QR Code Generator</h1>
+      <form class="flex gap-2 form">
+        <input
+          type="text"
+          placeholder="Enter text"
+          class="input rounded border border-neutral-300 bg-transparent px-4 py-2 outline-none placeholder:text-neutral-500" />
+        <button
+          class="btn rounded bg-neutral-300 px-4 py-2 font-medium text-neutral-900">
+          Generate
+        </button>
+      </form>
+      <img class="qrCode w-52 rounded" src="" alt="" />
+    </main>
+  </body>
+</html>

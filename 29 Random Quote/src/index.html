@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Random Quote</title>
+  </head>
+  <body
+    class="flex min-h-screen select-none items-center justify-center bg-gradient-to-b from-purple-800 to-purple-950 font-inter">
+    <main
+      class="flex w-[550px] flex-col items-center gap-10 rounded-xl bg-white p-10 text-black">
+      <h1 class="text-3xl font-semibold">Random Quote Generator</h1>
+
+      <div class="flex min-h-16 flex-col items-center justify-center text-lg">
+        <p class="quote text-center"></p>
+        <span class="loading loading-dots loading-md hidden text-black"></span>
+      </div>
+
+      <button
+        class="button rounded-full bg-gradient-to-b from-purple-800 to-purple-900 px-4 py-2 text-white">
+        New Quote
+      </button>
+    </main>
+  </body>
+</html>

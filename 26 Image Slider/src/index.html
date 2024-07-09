@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Image Slider</title>
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center gap-5 font-inter text-neutral-300"
+  >
+    <h1 class="text-center text-3xl">Image Slider</h1>
+    <main class="relative flex items-center">
+      <i class="ri-arrow-left-s-line left text-6xl"></i>
+      <section class="flex w-[450px] overflow-hidden rounded">
+        <div class="slider flex"></div>
+        <div
+          class="dots absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2"
+        ></div>
+      </section>
+
+      <i class="ri-arrow-right-s-line right text-6xl"></i>
+    </main>
+  </body>
+</html>

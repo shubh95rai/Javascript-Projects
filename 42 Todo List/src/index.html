@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Todo List</title>
+  </head>
+  <body
+    class="flex min-h-screen select-none items-start justify-center bg-neutral-900 font-inter text-neutral-300">
+    <main
+      class="mt-10 flex w-[500px] flex-col gap-10 rounded-lg border border-neutral-500 px-10 pt-5 pb-10 text-center">
+      <section class="flex flex-col gap-5">
+        <div class="h-5">
+          <p class="alert rounded text-sm font-medium">
+            <!-- Item Added -->
+          </p>
+        </div>
+        <h1 class="text-3xl font-medium">Todo List</h1>
+        <form class="form flex">
+          <input
+            type="text"
+            placeholder="e.g. apples"
+            spellcheck="false"
+            class="input w-full rounded-s border border-neutral-500 bg-transparent px-4 py-2 outline-none placeholder:text-neutral-500" />
+          <button
+            class="btn w-32 rounded-e bg-neutral-300 py-2 font-medium text-neutral-900">
+            Submit
+          </button>
+        </form>
+      </section>
+      <section class="w-full text-lg font-medium">
+        <ul class="todo-list flex flex-col gap-5">
+          <!-- EXAMPLE FOR CREATING UI -->
+
+          <!-- <li class="flex justify-between">
+            <p>Eggs</p>
+            <div class="flex gap-3 text-xl">
+              <i class="ri-edit-fill"></i>
+              <i class="ri-delete-bin-6-fill"></i>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+
+      <button class="clearBtn hidden rounded font-medium text-neutral-300">
+        Clear all
+      </button>
+    </main>
+  </body>
+</html>

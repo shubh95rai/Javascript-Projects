@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #eee;
+  --text: #222;
+  --text-btn: #eee;
+  --bg-btn: #222;
+}
+
+.dark {
+  --bg: #222;
+  --text: #eee;
+  --text-btn: #222;
+  --bg-btn: #eee;
+}
+
+.background {
+  background-color: var(--bg);
+}
+
+.background h1 {
+  color: var(--text);
+}
+
+.button {
+  color: var(--text-btn);
+  background-color: var(--bg-btn);
+}

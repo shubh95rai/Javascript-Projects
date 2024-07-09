@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.name {
+  animation-name: spin;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes spin {
+  0%,100% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
+  }
+  50%{
+    transform: translateY(-25px);
+    animation-timing-function: cubic-bezier(.8,0,1,1)
+  }
+}

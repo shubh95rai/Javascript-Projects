@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="bg-neutral-400 font-inter">
+    <div
+      class="mx-auto mt-52 flex w-96 flex-col gap-4 rounded-lg bg-white p-5 text-center shadow-lg">
+      <h1 class="pt-2 text-2xl font-semibold">QR Code Generator</h1>
+      <input
+        type="text"
+        placeholder="Enter text or URL"
+        autofocus
+        class="input rounded-md border border-gray-400 p-2 focus:outline-none"
+        spellcheck="false" />
+      <button class="btn rounded-md border-none bg-green-600 p-2 text-white">
+        Click here to Generate QR Code
+      </button>
+      <img class="image mx-auto" alt="" width="200px" />
+    </div>
+  </body>
+</html>

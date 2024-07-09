@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <title>Navbar</title>
+  </head>
+  <body class="font-inter bg-neutral-300 text-neutral-700">
+    <header class="relative">
+      <nav
+        class="nav flex justify-between items-center bg-white px-5 h-20 shadow-md transition-all">
+        <div class="font-bold text-3xl cursor-pointer">
+          Coding
+          <span class="text-sky-500">Addict</span>
+        </div>
+
+        <div
+          class="dropdown absolute -top-[200%] px-5 h-52 -z-10 left-0 bg-white w-full transition-all md:px-0 md:h-auto md:static md:w-auto md:z-auto">
+          <ul class="flex flex-col items-center gap-5 text-lg md:flex-row">
+            <li class="cursor-pointer hover:text-sky-500 transition-all">
+              Home
+            </li>
+            <li class="cursor-pointer hover:text-sky-500 transition-all">
+              Product
+            </li>
+            <li class="cursor-pointer hover:text-sky-500 transition-all">
+              Contact
+            </li>
+            <button
+              class="bg-sky-500 text-white px-5 py-2 rounded-md hover:bg-sky-600 transition-all">
+              Log in
+            </button>
+          </ul>
+        </div>
+
+        <i
+          class="toggle ri-menu-line font-bold text-3xl transition-all md:hidden cursor-pointer hover:text-sky-500"></i>
+      </nav>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle");
+      const dropdown = document.querySelector(".dropdown");
+      const nav = document.querySelector(".nav");
+
+      toggleBtn.addEventListener("click", () => {
+        if (toggleBtn.classList.contains("ri-menu-line")) {
+          toggleBtn.classList.replace("ri-menu-line", "ri-close-line");
+          dropdown.classList.replace("-top-[200%]", "top-20");
+          dropdown.classList.add("shadow-md");
+          nav.classList.remove("shadow-md");
+        } else {
+          toggleBtn.classList.replace("ri-close-line", "ri-menu-line");
+          dropdown.classList.replace("top-20", "-top-[200%]");
+          dropdown.classList.remove("shadow-md");
+          nav.classList.add("shadow-md");
+        }
+      });
+    </script>
+  </body>
+</html>

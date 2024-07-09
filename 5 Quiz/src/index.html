@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator Version 2</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="flex h-screen items-center justify-center bg-neutral-800 font-jetBrains text-neutral-900 select-none"
+  >
+    <div class="flex flex-col gap-8 bg-neutral-300 p-5 w-[400px] ">
+
+      <h1 class="question text-center text-xl font-semibold">Whats is the question may i know who?</h1>
+
+      <ul class="flex flex-col gap-2 ">
+        <li>
+          <input class="h-4 w-4 accent-neutral-700 " type="radio" name="option" id="option-a" />
+          <label class="align-text-bottom" id="option-text-a" for="option-a"  >Option a</label>
+        </li>
+        <li>
+          <input class="h-4 w-4 accent-neutral-700 " type="radio" name="option" id="option-b" />
+          <label class="align-text-bottom" id="option-text-b" for="option-b">Option a</label>
+        </li>
+        <li>
+          <input class="h-4 w-4 accent-neutral-700 " type="radio" name="option" id="option-c" />
+          <label class="align-text-bottom" id="option-text-c" for="option-c">Option a</label>
+        </li>
+        <li>
+          <input class="h-4 w-4 accent-neutral-700 " type="radio" name="option" id="option-d" />
+          <label class="align-text-bottom" id="option-text-d" for="option-d">Option a</label>
+        </li>
+      </ul>
+
+      <button class="submit text-lg p-2 w-full bg-neutral-800 text-neutral-300">Submit</button>
+
+    </div>
+  </body>
+</html>

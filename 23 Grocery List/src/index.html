@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Grocery List</title>
+  </head>
+  <body
+    class="flex h-screen items-start justify-center bg-slate-200 font-googleSans"
+  >
+    <main
+      class="mt-20 flex w-[500px] flex-col gap-16 rounded-xl bg-white p-10 text-center shadow-xl"
+    >
+      <section class="flex flex-col gap-5">
+        <div class="h-6">
+          <p class="alert rounded-xl text-sm capitalize tracking-widest"></p>
+        </div>
+        <h1 class="text-4xl font-medium">Grocery Items</h1>
+        <form class="form flex">
+          <input
+            type="text"
+            class="input w-full rounded-s-xl bg-slate-200 px-4 py-2 outline-none"
+            placeholder="e.g. eggs"
+            spellcheck="false"
+          />
+          <button
+            type="submit"
+            class="submit w-24 rounded-e-xl bg-sky-600 text-white"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <section class="flex flex-col gap-10">
+        <ul class="list flex flex-col gap-4 px-4 text-lg">
+          <!-- <li class="flex justify-between">
+            <h1>Eggs</h1>
+            <div>
+              <i class="ri-pencil-fill"></i>
+              <i class="ri-delete-bin-7-fill"></i>
+            </div>
+          </li> -->
+        </ul>
+        <!-- <div class="h-6"> -->
+        <button type="button" class="btn hidden text-red-600">
+          Clear Items
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

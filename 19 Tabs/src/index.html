@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Tabs</title>
+  </head>
+  <body
+    class="flex h-screen items-center justify-center bg-neutral-200 font-googleSans"
+  >
+    <header class="flex w-[1000px] flex-col gap-10">
+      <section class="flex flex-col items-center gap-2 text-center">
+        <h1 class="text-5xl font-medium">About</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+          consequatur dolorem!
+        </p>
+      </section>
+
+      <main>
+        <section class="flex gap-5">
+          <img
+            src="../images/pexels-emre-can-acer-2189696.jpg"
+            alt=""
+            class="h-72 w-96 grow basis-0 rounded-xl object-cover"
+          />
+
+          <div class="grow basis-0 overflow-hidden rounded-xl bg-white">
+            <div class="flex bg-slate-300">
+              <button
+                data-id="history"
+                class="btn activeBtn grow basis-0 px-6 py-2 text-lg tracking-wider"
+              >
+                History
+              </button>
+              <button
+                data-id="vision"
+                class="btn grow basis-0 px-6 py-2 text-lg tracking-wider bg-sky"
+              >
+                Vision
+              </button>
+              <button
+                data-id="goals"
+                class="btn grow basis-0 px-6 py-2 text-lg tracking-wider"
+              >
+                Goals
+              </button>
+            </div>
+
+            <article class="p-5">
+              <div class="article activeArticle hidden" id="history">
+                <h1 class="mb-1 text-lg font-medium tracking-wider">History</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi reprehenderit, eos quam voluptates unde, dolor
+                  doloremque illum quas autem repellat natus at consequuntur.
+                  Perspiciatis accusantium adipisci deserunt doloremque
+                  explicabo officiis.
+                </p>
+              </div>
+              <div class="article hidden" id="vision">
+                <h1 class="mb-1 text-lg font-medium tracking-wider">Vision</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ducimus veritatis dicta nemo. Necessitatibus corporis ut
+                  voluptatum ipsa officia non aliquid, itaque placeat eveniet
+                  neque maiores quisquam expedita natus facere? Vero.
+                </p>
+              </div>
+              <div class="article hidden" id="goals">
+                <h1 class="mb-1 text-lg font-medium tracking-wider">Goals</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos, cum, maiores ea officiis culpa quo optio quia,
+                  voluptate debitis odit possimus dolor delectus suscipit ex eum
+                  nesciunt? Commodi, modi quibusdam?
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </header>
+  </body>
+</html>
