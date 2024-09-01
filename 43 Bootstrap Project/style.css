@@ -1,0 +1,16 @@
+.c-img{
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.card-img-top{
+  height: 300px;
+  object-fit: cover;
+}
+
+.btn{
+  padding-inline: 20px;
+  padding-block: 10px;
+  font-size: 18px;
+}
